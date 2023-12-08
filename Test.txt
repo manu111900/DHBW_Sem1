@@ -1,2 +1,1 @@
-test
-2222 444
+In diesem Git Projekt werde ich für WIW Sem 1 programmier Hilfen speichern.
