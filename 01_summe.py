@@ -37,6 +37,11 @@ print("Die Summe von", num1, "und" , num2, "ist:", sum)
 # IMPORTANT: works only in Python 3.6 or newer!
 print(f"Die Summe von {num1} und {num2} ist: {sum}")
 
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+print('The sum of {} and {} is {}'.format(num1, num2, sum))
+print('The sum of {:06.2f} and {:06.2f} is {:06.2f}'.format(num1, num2, sum))
+print('The sum of {1:07.4f} and {0:06.2f} is {2:06.2f}'.format(num1, num2, sum))
+
 tt="""
 Weitere Formatierungsarten werden in 02_squareroot.py ausführlicher behandelt:
 
@@ -51,4 +56,4 @@ print('The sum of {:06.2f} and {:06.2f} is {:06.2f}'.format(num1, num2, sum))
 With turning of the first two terms
 print('The sum of {1:06.2f} and {0:06.2f} is {2:06.2f}'.format(num1, num2, sum))
 """
-print(tt)
+#print(tt)
