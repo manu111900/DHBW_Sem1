@@ -21,7 +21,7 @@ Weitere Debugging-Möglichkeiten mit
 """
 
 # uncomment to take input from the user
-# number = int(input("Enter a number: "))
+#number = int(input("Enter a number: "))
 
 # or fixed value: change the value for a different result
 number = 7
@@ -43,10 +43,12 @@ else:
     # Output with num=7: [1, 2, 3, 4, 5, 6, 7]
 
     for i in range(1,number + 1):
-        if DEBUG_INFO: print("factorial =", fact, "*", i, end=" = ")
+        if DEBUG_INFO: 
+            print("factorial =", fact, "*", i, end=" = ")
         fact = fact*i
-        if DEBUG_INFO: print(fact)
+        if DEBUG_INFO: 
+            print(fact)
 
     print(f"Die Fakultät von {number} ist {fact}") # newest f-string formatting
-    # print("The factorial of",number,"is",fact) # no formatting
-    # print("The factorial of {:5d} is {:5d}".format(number, fact))  # slightly older formatting
+    #print("The factorial of",number,"is",fact) # no formatting
+    #print("The factorial of {:5d} is {:5d}".format(number, fact))  # slightly older formatting

@@ -14,13 +14,14 @@
 import cmath
 
 # change this value for a different result
-num = 1+2j
+#num = 1+2j
+num = 7
 
 # uncommment to take input from the user
 # eval function to convert to complex number 
 # num = eval(input('Enter a number: '))
 
-num_sqrt = cmath.sqrt(num)
+num_sqrt = cmath.sqrt(num) 
 # with f-string formatting
 print(f'The square root of {num} is {num_sqrt.real:0.3f}+{num_sqrt.imag:0.3f}j')
 # and slightly older formatting

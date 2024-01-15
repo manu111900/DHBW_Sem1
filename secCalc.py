@@ -49,3 +49,17 @@ while count < 10:
 	# Wert der Variablen count wird um 1 erhöht
 	count = count + 1
 
+
+
+import pandas as pd
+
+df = pd.read_csv('data1.csv')
+y=df["Calories"].mode()
+print("y: ",y, " Type: ", type(y))
+x = df["Calories"].mode()[0]
+print("x: ",x, " Type: ", type(x))
+
+df["Calories"].fillna(x, inplace = True)
+
+print(df.to_string())
+
