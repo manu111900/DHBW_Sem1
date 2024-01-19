@@ -14,7 +14,7 @@
 DEBUG_INFO = True
 
 # Zu testende Zahl
-num = 407
+num = 31
 
 # take input from the user
 # num = int(input("Enter a number: "))
@@ -27,7 +27,8 @@ if num > 1:
    for i in range(2,num):
        if (num % i) == 0:
            print(num,"is not a prime number")
-           if DEBUG_INFO: print(i,"times",num//i,"is",num)
+           if DEBUG_INFO: 
+              print(i,"*",num//i,"is",num)
            break # we immediately leave the loop if we find num not to be prime
    else:
        # A for loop can have an optional else block as well. 
@@ -39,3 +40,11 @@ if num > 1:
 # or equal to 1, it is not prime
 else:
    print(num,"is not a prime number")
+
+
+def myFunction(zahl):
+    print("In Funktion: ", zahl)
+
+
+for i in range(1,50):
+    myFunction(i)

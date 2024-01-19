@@ -1,10 +1,9 @@
 import pandas as pd
 
-df = pd.read_excel('data2.xlsx')
+df = pd.read_csv('Data_dup.csv')
+df_dupResul=df.duplicated()
 
-df.dropna(inplace = True)
+for index in df_dupResul:
+    print(index)
 
-print(df.to_string)
-
-for 
-df.to_excel("data2_result.xlsx")
+#df.to_excel("Data_dup.xlsx")
