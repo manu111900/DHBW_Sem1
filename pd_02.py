@@ -2,8 +2,18 @@ import pandas as pd
 
 df = pd.read_csv('Data_dup.csv')
 df_dupResul=df.duplicated()
+i=0
+print(df_dupResul)
 
-for index in df_dupResul:
-    print(index)
+#dies ist die Lösung
+df=df.drop_duplicates(keep='first')
+'''
+for Ergebnis in df_dupResul:
+    print(Ergebnis)
 
-#df.to_excel("Data_dup.xlsx")
+    i=i+1
+'''
+
+df_dupResul=df.duplicated()
+print(df_dupResul)
+df.to_excel("Data_dup.xlsx")
