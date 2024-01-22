@@ -17,3 +17,5 @@ for Ergebnis in df_dupResul:
 df_dupResul=df.duplicated()
 print(df_dupResul)
 df.to_excel("Data_dup.xlsx")
+
+
