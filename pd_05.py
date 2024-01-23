@@ -18,6 +18,8 @@ df=df.set_index("Town")
 
 print(df)
 
-plot = df.plot(title="DataFrame Plot")
+plot = df.plot(title="Town Data",kind = 'bar')
+plt.gcf().set_size_inches(10,8)
 
-plt.show()
+plt.savefig('Town_Data.jpg', dpi=200)
+#plt.show()
