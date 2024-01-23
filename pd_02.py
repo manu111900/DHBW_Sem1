@@ -1,5 +1,9 @@
 import pandas as pd
 
+# Bitte noch folgende Module installieren
+# pip install matplotlib
+# pip install openpyxl
+
 df = pd.read_csv('Data_dup.csv')
 df_dupResul=df.duplicated()
 i=0
