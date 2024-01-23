@@ -12,7 +12,7 @@ df = pd.DataFrame({'length': [1.5, 0.5, 1.2, 0.9, 3],
                   index=['pig', 'rabbit', 'duck', 'chicken', 'horse'])
 '''
 
-df = pd.read_excel("pd_04_to_excel.xlsx")
+df = pd.read_excel("pd05_data.xlsx")
 print(df)
 df=df.set_index("Town")
 
@@ -21,5 +21,5 @@ print(df)
 plot = df.plot(title="Town Data",kind = 'bar')
 plt.gcf().set_size_inches(10,8)
 
-plt.savefig('Town_Data.jpg', dpi=200)
+plt.savefig('pd_05_Town_Data.jpg', dpi=200)
 #plt.show()
