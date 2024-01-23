@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Bitte noch folgende Module installieren
-# pip install matplotlib
+# pip install pandas
 # pip install numpy
 
 exam_data  = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
