@@ -5,4 +5,5 @@ print("Original DataFrames:")
 print(df1)
 print(df2)
 print("\nCheck for inequality of the said dataframes:")
+
 print(df1.ne(df2))
